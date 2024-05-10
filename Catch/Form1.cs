@@ -17,16 +17,17 @@ namespace Catch
         int heroSpeed = 10;
 
         //Ball variables
-        int ballSpeed = 8;
         int ballSize = 10;
+        int ballSpeed = 8;
 
         //List of balls
+
 
         int score = 0;
         int time = 500;
 
-        bool leftDown = false;
-        bool rightDown = false;
+        bool leftPressed = false;
+        bool rightPressed = false;
 
         SolidBrush greenBrush = new SolidBrush(Color.Green);
         SolidBrush whiteBrush = new SolidBrush(Color.White);
@@ -46,10 +47,10 @@ namespace Catch
             switch (e.KeyCode)
             {
                 case Keys.Left:
-                    leftDown = true;
+                    leftPressed = true;
                     break;
                 case Keys.Right:
-                    rightDown = true;
+                    rightPressed = true;
                     break;
             }
         }
@@ -59,10 +60,10 @@ namespace Catch
             switch (e.KeyCode)
             {
                 case Keys.Left:
-                    leftDown = false;
+                    leftPressed = false;
                     break;
                 case Keys.Right:
-                    rightDown = false;
+                    rightPressed = false;
                     break;
             }
         }
