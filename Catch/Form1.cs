@@ -21,7 +21,7 @@ namespace Catch
         int ballSpeed = 8;
 
         //List of balls
-
+        List<Rectangle> balls = new List<Rectangle>();
 
         int score = 0;
         int time = 500;
